@@ -5,3 +5,5 @@ terraform.tfstate.backup
 .envrc
 .direnv/
 *.tm.hcl.lock
+
+.terraform/

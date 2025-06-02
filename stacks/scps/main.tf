@@ -1,8 +1,5 @@
 
 
-provider "aws" {
-  region = "us-east-1"
-}
 
 resource "aws_organizations_policy" "restrict_regions" {
   name        = "RestrictRegions"

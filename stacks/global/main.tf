@@ -1,6 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
 
 resource "aws_organizations_organization" "main" {
   aws_service_access_principals = [
