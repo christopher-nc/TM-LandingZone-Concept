@@ -39,5 +39,6 @@ jobs:
 
       - name: Run Terramate
         run: |
+          terramate init
           terramate generate
           terramate run -- terraform plan
