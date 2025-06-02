@@ -29,6 +29,15 @@ jobs:
         with:
           go-version: '1.21'
 
+      # - name: Install Terramate
+      #   uses: terramate-io/terramate-action@v2
+
+      - name: Install Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.7.4
+          terraform_wrapper: false
+          
       - name: Install Terramate
         run: |
           go install github.com/terramate-io/terramate/cmd/terramate@latest
