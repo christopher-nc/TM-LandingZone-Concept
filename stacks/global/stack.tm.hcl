@@ -8,4 +8,8 @@ stack {
     "management",
     "production",
   ]
+
+  before = [
+  "tag:member",
+  ]
 }
