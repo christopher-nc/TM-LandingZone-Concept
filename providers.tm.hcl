@@ -23,11 +23,11 @@ generate_hcl "backend.tf" {
   content {
     terraform {
       backend "s3" {
-        bucket         = global.terraform.backend.bucket
-        key            = global.terraform.backend.key
-        region         = global.terraform.backend.region
-        encrypt        = global.terraform.backend.encrypt
-        use_lockfile   = global.terraform.backend.use_lockfile
+        bucket         = global.terraform.providers.backend.bucket
+        key            = global.terraform.providers.backend.key
+        region         = global.terraform.providers.backend.region
+        encrypt        = global.terraform.providers.backend.encrypt
+        use_lockfile   = global.terraform.providers.backend.use_lockfile
       }
     }
   }
