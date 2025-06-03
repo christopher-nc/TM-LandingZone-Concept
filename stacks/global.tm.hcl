@@ -15,7 +15,7 @@ globals {
       backend = {
         type    = "s3"
         bucket  = "ncld-lab-terraform-states-comm"
-        key     = "terraform/"
+        key     = "terraform/${terramate.stack.name}/terraform.tfstate"
         region  = "us-east-2"
         encrypt = true
         use_lockfile = true
