@@ -19,3 +19,16 @@ generate_hcl "providers.tf" {
   }
 }
 
+generate_hcl "backend.tf" {
+  content {
+    terraform {
+      backend "s3" {
+        bucket         = global.terraform.backend.bucket
+        key            = global.terraform.backend.key
+        region         = global.terraform.backend.region
+        encrypt        = global.terraform.backend.encrypt
+        use_lockfile   = global.terraform.backend.use_lockfile
+      }
+    }
+  }
+}

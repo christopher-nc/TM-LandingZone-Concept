@@ -12,6 +12,14 @@ globals {
         source  = "hashicorp/aws"
         version = "~> 5.0"
       }
+      backend = {
+        type    = "s3"
+        bucket  = "ncld-lab-terraform-states-comm"
+        key     = "terraform/"
+        region  = "us-east-2"
+        encrypt = true
+        use_lockfile = true
+      }
     }
   }
 }
