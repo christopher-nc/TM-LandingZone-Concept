@@ -12,7 +12,7 @@ resource "aws_organizations_organization" "main" {
 resource "aws_cloudformation_stack" "lza" {
   name = "AWSAccelerator-InstallerStack"
   
-  template_url = "https://lza-aws-accelerator-installer-bucket.s3.us-east-1.amazonaws.com/AWSAccelerator-InstallerStack.template.json"
+  template_url = "https://s3.amazonaws.com/solutions-reference/landing-zone-accelerator-on-aws/latest/AWSAccelerator-InstallerStack.template"
 
   parameters = {
     RepositoryBranchName              = "main"

@@ -22,4 +22,16 @@ globals {
       }
     }
   }
+  lza = {
+    account_id = "123456789012"
+    email = "lza@lza.com"
+    role_name = "OrganizationAccountAccessRole"
+    audit_account_email = "lza@lza.com"
+    log_archive_account_email = "lza@lza.com"
+    management_account_email = "lza@lza.com"
+    enable_approval_stage = true
+    approval_stage_notify_email_list = "lza@lza.com"
+    control_tower_enabled = true
+    repository_branch_name = "main"
+  }
 }

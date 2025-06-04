@@ -1,8 +1,31 @@
 name: Deploy to AWS
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
+    inputs:
+      terraform:
+        description: 'Terraform Operation'
+        required: true
+        default: 'plan'
+        type: choice
+        options:
+        - plan
+        - apply
+        - destroy
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
+      environment:
+        description: 'Environment to run tests against'
+        default: 'production'
+        type: environment
+        required: true
 
 jobs:
   deploy:
@@ -51,3 +74,7 @@ jobs:
           terramate generate
           terramate run -- terraform init
           terramate run -- terraform plan
+
+      - name: Terraform Apply
+        if: inputs.terraform == 'apply'
+        run: terramate run --terraform apply -auto-approve -input=false
