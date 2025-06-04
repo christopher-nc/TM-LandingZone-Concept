@@ -82,8 +82,8 @@ jobs:
       - name: Run Terramate
         run: |
           terramate generate
-          terramate --tags inputs.tags run -- terraform init
-          terramate --tags inputs.tags run -- terraform plan
+          terramate --tags ${{ inputs.tags }} run -- terraform init
+          terramate --tags ${{ inputs.tags }} run -- terraform plan
 
       - name: Terramate Apply
         if: inputs.terraform == 'apply'
