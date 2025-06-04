@@ -7,9 +7,10 @@ stack {
     "billing",
     "management",
     "production",
+    "lza"
   ]
 
-  before = [
-  "tag:member",
+  after = [
+  "tag:organization",
   ]
 }

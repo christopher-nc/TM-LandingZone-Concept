@@ -5,4 +5,8 @@ stack {
   tags = [
     "member"
     ]
+
+  after = [
+    "tag:lza",
+  ]
 }
