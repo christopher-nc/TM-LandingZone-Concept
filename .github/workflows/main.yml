@@ -24,7 +24,7 @@ on:
       environment:
         description: 'Environment to run tests against'
         default: 'production'
-        type: environment
+        type: choice
         options:
         - production
         - staging
