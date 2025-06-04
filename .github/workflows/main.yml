@@ -87,4 +87,4 @@ jobs:
 
       - name: Terramate Apply
         if: inputs.terraform == 'apply'
-        run: terramate --tags inputs.tags run -- terraform apply -auto-approve -input=false
+        run: terramate --tags ${{ inputs.tags }} run -- terraform apply -auto-approve -input=false
