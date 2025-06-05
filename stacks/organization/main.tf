@@ -9,5 +9,5 @@ resource "aws_organizations_organization" "main" {
 
 resource "aws_codeconnections_connection" "github" {
   name          = "lza-github"
-  provider_type = "github"
+  provider_type = "GitHub"
 }
