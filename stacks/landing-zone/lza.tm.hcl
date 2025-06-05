@@ -23,7 +23,7 @@ generate_hcl "aws_cf_stack_lza.tf" {
         ApprovalStageNotifyEmailList      = global.lza.approval_stage_notify_email_list
         ConfigurationRepositoryLocation   = global.lza.configuration_repository_location
         UseExistingConfigRepo             = global.lza.use_existing_config_repo
-        ExistingConfigRepositoryName      = "landing-zone-accelerator-on-aws"
+        ExistingConfigRepositoryName      = "lab-lza-config"
         ExistingConfigRepositoryBranchName = "main"
         ExistingConfigRepositoryOwner       = global.lza.existing_config_repository_owner
         ConfigCodeConnectionArn             = global.lza.config_code_connection_arn
