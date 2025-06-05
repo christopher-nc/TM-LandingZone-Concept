@@ -27,7 +27,7 @@ globals {
     audit_account_email               = "christopher.dearie+lab_audit@nclouds.com"
     log_archive_account_email         = "christopher.dearie+lab_logging@nclouds.com"
     management_account_email          = "aws-nclouds-delivery-sandbox@nclouds.com"
-    enable_approval_stage             = true
+    enable_approval_stage             = "Yes"
     approval_stage_notify_email_list  = "christopher.dearie+lab_approval@nclouds.com"
     control_tower_enabled             = "Yes"
     repository_branch_name            = "main"
