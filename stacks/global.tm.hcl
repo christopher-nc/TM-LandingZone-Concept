@@ -29,7 +29,7 @@ globals {
     management_account_email          = "aws-nclouds-delivery-sandbox@nclouds.com"
     enable_approval_stage             = true
     approval_stage_notify_email_list  = "christopher.dearie+lab_approval@nclouds.com"
-    control_tower_enabled             = true
+    control_tower_enabled             = "Yes"
     repository_branch_name            = "main"
     configuration_repository_location = "codeconnection"
     use_existing_config_repo          = "Yes"
