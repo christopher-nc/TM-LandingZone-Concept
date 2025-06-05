@@ -23,15 +23,17 @@ globals {
     }
   }
   lza = {
-    account_id = "123456789012"
-    email = "lza@lza.com"
-    role_name = "OrganizationAccountAccessRole"
-    audit_account_email = "lza@lza.com"
-    log_archive_account_email = "lza@lza.com"
-    management_account_email = "lza@lza.com"
-    enable_approval_stage = true
-    approval_stage_notify_email_list = "lza@lza.com"
-    control_tower_enabled = true
-    repository_branch_name = "main"
+    role_name                         = "OrganizationAccountAccessRole"
+    audit_account_email               = "christopher.dearie+lab_audit@nclouds.com"
+    log_archive_account_email         = "christopher.dearie+lab_logging@nclouds.com"
+    management_account_email          = "aws-nclouds-delivery-sandbox@nclouds.com"
+    enable_approval_stage             = true
+    approval_stage_notify_email_list  = "christopher.dearie+lab_approval@nclouds.com"
+    control_tower_enabled             = true
+    repository_branch_name            = "main"
+    configuration_repository_location = "codeconnection"
+    use_existing_config_repo          = "Yes"
+    existing_config_repository_owner  = "christopher-nc"
+    config_code_connection_arn        = "arn:aws:codeconnections:us-east-2:897722666736:connection/a087495c-8763-418c-a281-4d6394388a86"
   }
 }
