@@ -6,3 +6,8 @@ resource "aws_organizations_organization" "main" {
   ]
   feature_set = "ALL"
 }
+
+resource "aws_codeconnections_connection" "github" {
+  name          = "lza-github"
+  provider_type = "Github"
+}
