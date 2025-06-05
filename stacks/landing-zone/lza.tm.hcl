@@ -14,7 +14,7 @@ generate_hcl "aws_cf_stack_lza.tf" {
         RepositoryName                    = "landing-zone-accelerator-on-aws"
         RepositoryBranchName              = global.lza.repository_branch_name
         RepositorySource                  = "github"
-        RepositoryOwner                   = "aws-ia"
+        RepositoryOwner                   = "awslabs"
         ManagementAccountEmail            = global.lza.management_account_email
         LogArchiveAccountEmail            = global.lza.log_archive_account_email
         AuditAccountEmail                 = global.lza.audit_account_email
